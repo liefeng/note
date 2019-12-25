@@ -563,25 +563,45 @@
 </li>
 </ul>
 <p><strong>Average Entropy</strong></p>
-<p>Self-information amount
-$$
+<p>Self-information amount</p>
+<div>
+<div class="MathJax_Preview">
 -I(x) = -\log_2P(x)
-$$
-Entropy : Expected value of information amount
-$$
+</div>
+<script type="math/tex; mode=display">
+-I(x) = -\log_2P(x)
+</script>
+</div>
+<p>Entropy : Expected value of information amount</p>
+<div>
+<div class="MathJax_Preview">
 -H=-\Sigma P(x)\log_2P(x)
-$$
-Average Entropy
-$$
--H'=-\Sigma P(v){\Sigma P(x)\log_2P(x)}
-$$
-Then, Here we can get 
+</div>
+<script type="math/tex; mode=display">
+-H=-\Sigma P(x)\log_2P(x)
+</script>
+</div>
+<p>Average Entropy</p>
+<div>
+<div class="MathJax_Preview">
+-H'=-\Sigma P(v)\{\Sigma P(x)\log_2P(x)\}
+</div>
+<script type="math/tex; mode=display">
+-H'=-\Sigma P(v)\{\Sigma P(x)\log_2P(x)\}
+</script>
+</div>
+<p>Then, Here we can get 
 * H(S)  : Entropy of the dataset S 
 * H(S|A) be entropy of S splitted by attribute A</p>
-<p>Hence, we can calculate Information gain IG(A) which is the measure of the difference in entropy from before to after the set S is split on an attribute A
-$$
+<p>Hence, we can calculate Information gain IG(A) which is the measure of the difference in entropy from before to after the set S is split on an attribute A</p>
+<div>
+<div class="MathJax_Preview">
 IG(S,A)=H(S)-\sum_{t\in T}p(t)H(t)=H(S)-H(S|A)
-$$</p>
+</div>
+<script type="math/tex; mode=display">
+IG(S,A)=H(S)-\sum_{t\in T}p(t)H(t)=H(S)-H(S|A)
+</script>
+</div>
 <h2 id="computation-theory">Computation theory</h2>
 <p><strong>Lectures: I238E,JAIST // Books: Introduction to Theoretical Computer Science</strong></p>
 <p>I am using these resources:</p>
