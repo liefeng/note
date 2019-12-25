@@ -327,6 +327,19 @@
     Machine Learning
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#supervised-learning" title="Supervised Learning" class="md-nav__link">
+    Supervised Learning
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -468,6 +481,19 @@
     Machine Learning
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#supervised-learning" title="Supervised Learning" class="md-nav__link">
+    Supervised Learning
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -496,8 +522,10 @@
                 
                 <h1 id="studying-notes-in-computer-science">Studying Notes in Computer Science</h1>
 <p>According to here (<a href="https://zhuanlan.zhihu.com/p/24774857">https://zhuanlan.zhihu.com/p/24774857</a>) and here (<a href="https://www.1point3acres.com/bbs/thread-161015-1-1.html">https://www.1point3acres.com/bbs/thread-161015-1-1.html</a>) and my senior's suggestions, I began to learn computer science by myself. I am a master student in School of Material Science, JAIST. I can take School of Information Science's lectures freely. Other time I will learn some lectures online. About study resources, please use Google and Github.</p>
+<p>In this page, I just take study notes.</p>
 <p><strong>Update later</strong></p>
 <p>E-books:<a href="http://it-ebooks.flygon.net/">http://it-ebooks.flygon.net/</a></p>
+<p>and you also can use <s>Gen Lib</s> to get some e-books!</p>
 <h2 id="computer-networks">Computer Networks</h2>
 <p><strong>Lectures: I226E,JAIST // Book: Computer Networking: A Top-Down Approach</strong></p>
 <p>I am using these resources:</p>
@@ -505,7 +533,6 @@
 <li><a href="https://github.com/myk502/Top-Down-Approach/blob/master/计算机网络_自顶向下方法（英文第6版.pdf">Computer Networking: A Top-Down Approach</a></li>
 <li><a href="https://github.com/moranzcw/Computer-Networking-A-Top-Down-Approach-NOTES">Computer Networking Note</a></li>
 </ul>
-<p>The signal transfer process is [digital data,analog data] to [analog data, digital data] , the detail is [digital data] to [composite data]. In this process, we should consider about the relationships between physic signal(eg. frequencies, bandwidth, channel) and composite data.</p>
 <h2 id="machine-learning">Machine Learning</h2>
 <p><strong>Lectures: I239E,JAIST &amp; Machine Learning course, Nation Taiwan University &amp; YouTube // Books: Machine Learning &amp; Deep Learning</strong></p>
 <p>I got some resources from here:<a href="https://github.com/allmachinelearning/MachineLearning">https://github.com/allmachinelearning/MachineLearning</a></p>
@@ -519,11 +546,49 @@
 <li><a href="https://exacity.github.io/deeplearningbook-chinese/">Deep Learning Book Chinese Translation</a></li>
 <li><a href="https://github.com/datawhalechina">Datawhale_Learning</a></li>
 </ul>
+<h3 id="supervised-learning">Supervised Learning</h3>
+<p>Top-down training of Decision Tree</p>
+<p><strong>Resursive Partitioning</strong></p>
+<ul>
+<li>Find "best" test to install at root</li>
+<li>Split data on root test</li>
+<li>
+<p>Repeat until: </p>
+</li>
+<li>
+<p>All nodes are classes</p>
+</li>
+<li>
+<p>No more features to test</p>
+</li>
+</ul>
+<p><strong>Average Entropy</strong></p>
+<p>Self-information amount
+$$
+-I(x) = -\log_2P(x)
+$$
+Entropy : Expected value of information amount
+$$
+-H=-\Sigma P(x)\log_2P(x)
+$$
+Average Entropy
+$$
+-H'=-\Sigma P(v){\Sigma P(x)\log_2P(x)}
+$$
+Then, Here we can get 
+* H(S)  : Entropy of the dataset S 
+* H(S|A) be entropy of S splitted by attribute A</p>
+<p>Hence, we can calculate Information gain IG(A) which is the measure of the difference in entropy from before to after the set S is split on an attribute A
+$$
+IG(S,A)=H(S)-\sum_{t\in T}p(t)H(t)=H(S)-H(S|A)
+$$</p>
 <h2 id="computation-theory">Computation theory</h2>
 <p><strong>Lectures: I238E,JAIST // Books: Introduction to Theoretical Computer Science</strong></p>
 <p>I am using these resources:</p>
 <ul>
 <li><a href="https://introtcs.org/public/">Introduction to Theoretical Computer Science</a></li>
+<li><a href="https://notendur.hi.is/mae46/Haskolinn/5.%20misseri%20-%20Haust%202018/Formleg%20ma%CC%81l%20og%20reiknanleiki/Introduction%20to%20the%20theory%20of%20computation_third%20edition%20-%20Michael%20Sipser.pdf">Introduction to the theory of Computation</a></li>
+<li><a href="">ECS-120,UC-Davis</a></li>
 <li><a href="http://www.jaist.ac.jp/~uehara/course/2019/i238/">I238, JAIST</a></li>
 </ul>
                 
