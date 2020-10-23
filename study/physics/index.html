@@ -304,29 +304,42 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#solid-state-physics" class="md-nav__link">
-    Solid State Physics
+  <a href="#electromagnetism" class="md-nav__link">
+    Electromagnetism
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#principles-of-optics" class="md-nav__link">
-    Principles of Optics
+  <a href="#fdtd" class="md-nav__link">
+    FDTD
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuring-meep-on-a-supercomputer" class="md-nav__link">
+    Configuring meep on a supercomputer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quantum-chemistry" class="md-nav__link">
+    Quantum Chemistry
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#vibrational-imagingraman-infrared-near-infrared" class="md-nav__link">
-    Vibrational Imaging(Raman, Infrared, Near-Infrared)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#computational-chemistry" class="md-nav__link">
-    Computational Chemistry
+  <a href="#dft" class="md-nav__link">
+    DFT
   </a>
   
 </li>
@@ -464,29 +477,42 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#solid-state-physics" class="md-nav__link">
-    Solid State Physics
+  <a href="#electromagnetism" class="md-nav__link">
+    Electromagnetism
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#principles-of-optics" class="md-nav__link">
-    Principles of Optics
+  <a href="#fdtd" class="md-nav__link">
+    FDTD
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuring-meep-on-a-supercomputer" class="md-nav__link">
+    Configuring meep on a supercomputer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quantum-chemistry" class="md-nav__link">
+    Quantum Chemistry
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#vibrational-imagingraman-infrared-near-infrared" class="md-nav__link">
-    Vibrational Imaging(Raman, Infrared, Near-Infrared)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#computational-chemistry" class="md-nav__link">
-    Computational Chemistry
+  <a href="#dft" class="md-nav__link">
+    DFT
   </a>
   
 </li>
@@ -509,31 +535,143 @@
                 
                 
                 <h1 id="study-notes-in-physics-chemistry">Study Notes in Physics &amp; Chemistry</h1>
-<h2 id="solid-state-physics">Solid State Physics</h2>
-<p>I am using these resources:</p>
-<ul>
-<li><a href="http://podcasts.ox.ac.uk/series/oxford-solid-state-basics">The Oxford Solid State Basics</a></li>
-<li><a href="http://www-thphys.physics.ox.ac.uk/people/SteveSimon/book.html">TextBook-The Oxford Solid State Basics</a></li>
-</ul>
-<p></s>In fact, you can get the textbook from one Russian website</s></p>
-<h2 id="principles-of-optics">Principles of Optics</h2>
-<p>I am using these textbooks:</p>
-<ul>
-<li>Principles of Nano-Optics</li>
-<li>Principles of optics: electromagnetic theory of propagation, interference and diffraction of light </li>
-<li>Raman Spectroscopy (Yukihiro Ozaki)</li>
-</ul>
-<h2 id="vibrational-imagingraman-infrared-near-infrared">Vibrational Imaging(Raman, Infrared, Near-Infrared)</h2>
-<p>About this topic, I am learning it by myself. The textbook is:</p>
-<ul>
-<li>Raman, Infrared, and Near-Infrared Chemical Imaging (Slobodan Sasic, Yukihiro Ozaki).</li>
-</ul>
-<h2 id="computational-chemistry">Computational Chemistry</h2>
-<p>I am learning it by myself and using these computer &amp; software resources:</p>
-<ul>
-<li><a href="http://sobereva.com/multiwfn/">multiwfn</a></li>
-<li><a href="https://www.jaist.ac.jp/iscenter/mpc/">JAIST-ISC,MPC</a></li>
-</ul>
+<h2 id="electromagnetism">Electromagnetism</h2>
+<h2 id="fdtd">FDTD</h2>
+<h4 id="configuring-meep-on-a-supercomputer">Configuring meep on a supercomputer</h4>
+<p>Equipment: JAIST supercomputer</p>
+<p>Since I have to do some FDTD/EM simulations, but it's a pain to use a personal PC, I chose to build a MEEP simulation environment on the supercomputer, which will be very time saving. My reference is the official MEEP documentation <a href="https://meep.readthedocs.io/en/latest/Installation/">https://meep.readthedocs.io/en/latest/Installation/</a></p>
+<p><strong>Installation of miniconda</strong></p>
+<p>Create a python folder in your own directory, the school supercomputers already have the python3 environment pre-installed, so just follow the official documentation to install it.
+<div class="highlight"><pre><span></span><code><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="c1">//repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh</span>
+</code></pre></div>
+Download the miniconda package, which is python 3 version. Then
+<div class="highlight"><pre><span></span><code><span class="n">bash</span> <span class="n">miniconda</span><span class="p">.</span><span class="na">sh</span> <span class="o">-</span><span class="n">b</span> <span class="o">-</span><span class="n">p</span> <span class="o">&lt;</span><span class="n">desired_prefix</span><span class="o">&gt;</span>
+</code></pre></div>
+Note that the <desired_prefix> here is the directory to unpack, <strong>you have to set it yourself!</strong>, here I put it under python meep.
+After that
+<div class="highlight"><pre><span></span><code><span class="n">export</span> <span class="n">PATH</span><span class="o">=&lt;</span><span class="n">desired_prefix</span><span class="o">&gt;/</span><span class="n">bin</span><span class="p">:</span><span class="n">$PATH</span>
+</code></pre></div>
+It'll report an error</p>
+<p><div class="highlight"><pre><span></span><code><span class="nl">export:</span> <span class="n">command</span> <span class="n">not</span> <span class="n">found</span>
+</code></pre></div>
+Is there something wrong with my SHELL? So check the SHELL info first.
+<div class="highlight"><pre><span></span><code><span class="n">echo</span> <span class="n">$SHELL</span>
+</code></pre></div>
+return to
+<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">tcsh</span>
+</code></pre></div>
+So it's tcsh not bash! No wonder the error is reported. In this case, just go back to my account directory and manually add the path information to the .cshrc file.
+<div class="highlight"><pre><span></span><code><span class="n">vim</span> <span class="o">~/</span><span class="p">.</span><span class="na">cshrc</span>
+</code></pre></div>
+But after many tests, I still can't execute it, probably due to account permissions restrictions (and why is the SHELL in the school's supercomputing tcsh instead of bash, orz), so I have to use the setenv command to execute it manually.
+<div class="highlight"><pre><span></span><code><span class="n">setenv</span> <span class="n">PATH</span> <span class="s">&quot;&lt;desired_prefix&gt;/bin&quot;</span>
+<span class="n">setenv</span> <span class="n">PATH</span> <span class="o">&lt;</span><span class="n">desired_prefix</span><span class="o">&gt;/</span><span class="n">bin</span><span class="p">:</span><span class="n">$PATH</span>
+</code></pre></div>
+After that it worked, the downside is that you'll probably have to manually execute the command again the next time you use the conda command. Then create an environment named mp and install meep in it.
+<div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">mp</span> <span class="o">-</span><span class="n">c</span> <span class="n">chogan</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">pymeep</span>
+</code></pre></div>
+Then there was the long installation process. After installing it, this error popped up.
+<div class="highlight"><pre><span></span><code><span class="n">Exception</span><span class="p">(</span><span class="err">&#39;</span><span class="n">No</span> <span class="n">compatible</span> <span class="n">shell</span> <span class="n">found</span><span class="o">!</span><span class="err">&#39;</span><span class="p">)</span>
+</code></pre></div>
+It doesn't matter. Go on.
+<div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">activate</span> <span class="n">mp</span>
+</code></pre></div>
+It was reported wrong! Prompting to use conda init to specify the shell.
+It seems to be a SHELL selection problem, so I'll have to do it manually, but to make it easier, I'll select tcsh, so I'll type in
+<div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">init</span> <span class="n">tcsh</span>
+<span class="n">exec</span> <span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">tcsh</span> <span class="o">-</span><span class="n">l</span>
+</code></pre></div>
+Then activate the mp environment.
+<div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">activate</span> <span class="n">mp</span>
+</code></pre></div>
+No errors were reported and the directory front shows (mp), indicating successful activation! You should be able to use it after that, but for ease of use, it's better to just install a Jupyter, and here I'm also referring to the official documentation at <a href="https://jupyter.org/install">https://jupyter.org/install</a></p>
+<p>Execute in this miniconda's directory.
+<div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">jupyterlab</span>
+</code></pre></div>
+After that it's a long install and wait, sometimes it prompts to upgrade the conda version, which can be ignored. jupyterlab is the next generation of jupyter notebook (replacement), so I don't install jupyter notebook anymore. It's possible to use the pip command to install it, but it's too complicated to configure the PATH, so I'll use the conda command. After the installation, execute.
+<div class="highlight"><pre><span></span><code><span class="n">jupyter</span> <span class="n">lab</span>
+</code></pre></div>
+It brings up a browser window where you can use jupyter lab.</p>
+<p>However, when using it, I can't find the package! But the conda list is packaged!
+thus
+<div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">search</span> <span class="n">pymeep</span>
+</code></pre></div>
+return to
+<div class="highlight"><pre><span></span><code><span class="n">Loading</span> <span class="n">channels</span><span class="p">:</span> <span class="n">done</span>
+<span class="n">No</span> <span class="n">match</span> <span class="n">found</span> <span class="k">for</span><span class="p">:</span> <span class="n">pymeep</span><span class="p">.</span> <span class="n">search</span><span class="p">:</span> <span class="o">*</span><span class="n">pymeep</span><span class="o">*</span>
+
+<span class="nl">PackagesNotFoundError:</span> <span class="n">The</span> <span class="n">following</span> <span class="n">packages</span> <span class="n">are</span> <span class="n">not</span> <span class="n">available</span> <span class="n">from</span> <span class="n">current</span> <span class="n">cha</span> <span class="n">nnels</span><span class="p">:</span>
+
+  <span class="o">-</span> <span class="n">pymeep</span>
+
+<span class="n">Current</span> <span class="n">channels</span><span class="p">:</span>
+
+  <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="c1">//repo.anaconda.com/pkgs/main/linux-64</span>
+  <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="c1">//repo.anaconda.com/pkgs/main/noarch</span>
+  <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="c1">//repo.anaconda.com/pkgs/r/linux-64</span>
+  <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="c1">//repo.anaconda.com/pkgs/r/noarch</span>
+
+<span class="n">To</span> <span class="n">search</span> <span class="k">for</span> <span class="n">alternate</span> <span class="n">channels</span> <span class="n">that</span> <span class="n">may</span> <span class="n">provide</span> <span class="n">the</span> <span class="n">conda</span> <span class="kn">package</span> <span class="nn">you</span><span class="err">&#39;</span><span class="n">re</span>
+<span class="n">Looking</span> <span class="k">for</span><span class="p">,</span> <span class="n">navigate</span> <span class="n">to</span>
+
+<span class="nl">    https:</span><span class="c1">//anaconda.org</span>
+
+<span class="n">and</span> <span class="n">use</span> <span class="n">the</span> <span class="n">search</span> <span class="n">bar</span> <span class="n">at</span> <span class="n">the</span> <span class="n">top</span> <span class="n">of</span> <span class="n">the</span> <span class="n">page</span><span class="p">.</span>
+</code></pre></div>
+The solution is to configure conda and enter
+<div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="n">append</span> <span class="n">channels</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
+</code></pre></div>
+At this time.
+<div class="highlight"><pre><span></span><code><span class="n">python</span> <span class="o">-</span><span class="n">c</span> <span class="err">&#39;</span><span class="kn">import</span> <span class="nn">meep</span><span class="err">&#39;</span>
+</code></pre></div>
+It will not report an error, indicating that the installation is generally successful and working. However, there may be other problems, such as
+<div class="highlight"><pre><span></span><code><span class="nl">AttributeError:</span> <span class="n">module</span> <span class="err">&#39;</span><span class="n">meep</span><span class="err">&#39;</span> <span class="n">has</span> <span class="n">no</span> <span class="n">attribute</span> <span class="err">&#39;</span><span class="n">Vector3</span><span class="err">&#39;</span>
+</code></pre></div>
+But I installed it on a virtual machine in the same way, and running the same code didn't cause this problem. It's most likely a problem with the supercomputing on the python version. But overall the installation method is correct, and it is possible to run some simple code. As for some bug fixes, I'll update them later.</p>
+<p>I'll try to install Linux for Windows on my workstation (DELL PowerEdge T620) by installing Linux for Windows and then use the above method to install, after all, the configuration of this workstation is not low, barely work. After all, the configuration of this workstation is not low, it barely works. Although the problem of IEER1 has not been solved (even if it is not serious) because of unknown reasons.</p>
+<p>About the installation and setting method of WSL, I refer to the following: <a href="https://zhuanlan.zhihu.com/p/61542198">https://zhuanlan.zhihu.com/p/61542198</a></p>
+<p>After starting Ubuntu, first beautify the vim, after all, it is to show the boss to pretend to use .... I'm not going to say anything specific, but the code is as follows.
+<div class="highlight"><pre><span></span><code><span class="n">mkdir</span> <span class="p">.</span><span class="na">vim</span>
+<span class="n">cd</span> <span class="p">.</span><span class="na">vim</span>
+<span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="c1">//github.com/tomasr/molokai.git</span>
+<span class="n">cp</span> <span class="o">-</span><span class="n">rf</span> <span class="n">molokai</span><span class="o">/</span><span class="n">colors</span><span class="o">/</span> <span class="p">.</span> <span class="o">/</span><span class="n">colors</span><span class="o">/</span> <span class="p">.</span>
+<span class="n">vim</span> <span class="n">vimrc</span>
+</code></pre></div>
+After opening vim, add the following code, then:wq to exit
+<div class="highlight"><pre><span></span><code><span class="n">colorscheme</span> <span class="n">molokai</span>
+</code></pre></div>
+After that create a meep folder and install miniconda, since the shell here is bash by default, it's sour to just copy it. The commands in order are as follows.
+<div class="highlight"><pre><span></span><code><span class="n">mkdir</span> <span class="n">meep</span>
+<span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="c1">//repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh</span>
+<span class="n">bash</span> <span class="n">miniconda</span><span class="p">.</span><span class="na">sh</span> <span class="o">-</span><span class="n">b</span> <span class="o">-</span><span class="n">p</span> <span class="n">miniconda</span> <span class="c1">// Here I extracted it to miniconda folder</span>
+<span class="n">export</span> <span class="n">PATH</span><span class="o">=/</span><span class="n">root</span><span class="o">/</span><span class="n">meep</span><span class="o">/</span><span class="n">miniconda</span><span class="o">/</span><span class="n">bin</span><span class="p">:</span><span class="n">$PATH</span> <span class="c1">//set PATH variable</span>
+</code></pre></div>
+This is followed by the steps to install meep, in exactly the same way as above. The commands in order are as follows.
+<div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">mp</span> <span class="o">-</span><span class="n">c</span> <span class="n">chogan</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">pymeep</span> <span class="c1">//create a virtual environment named mp to install the pymeep package</span>
+<span class="n">conda</span> <span class="n">init</span> <span class="n">bash</span> <span class="c1">//configure the shell</span>
+<span class="n">exec</span> <span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">bash</span> <span class="c1">//configure the shell</span>
+<span class="n">conda</span> <span class="n">activate</span> <span class="n">mp</span> <span class="c1">// activate environment</span>
+</code></pre></div>
+Then I installed jupyterlab in that environment.
+<div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">jupyterlab</span>
+</code></pre></div>
+But when opening jupyterlab, you get an error.
+<div class="highlight"><pre><span></span><code> <span class="n">Running</span> <span class="n">as</span> <span class="n">root</span> <span class="n">is</span> <span class="n">not</span> <span class="n">recommended</span><span class="p">.</span> <span class="n">Use</span> <span class="o">--</span><span class="n">allow</span><span class="o">-</span><span class="n">root</span> <span class="n">to</span> <span class="n">bypass</span><span class="p">.</span>
+<span class="n">Use</span> <span class="o">--</span><span class="n">allow</span><span class="o">-</span><span class="n">root</span> <span class="n">to</span> <span class="n">bypass</span><span class="p">.</span> <span class="err">``</span>
+<span class="n">The</span> <span class="n">solution</span><span class="p">.</span>
+<span class="err">```</span><span class="n">java</span>
+<span class="n">jupyter</span> <span class="n">notebook</span> <span class="o">--</span><span class="n">generate</span><span class="o">-</span><span class="n">config</span> <span class="o">--</span><span class="n">allow</span><span class="o">-</span><span class="n">root</span>
+</code></pre></div>
+Then vim generates the configuration file, after which
+<div class="highlight"><pre><span></span><code><span class="err">#</span><span class="n">c</span><span class="p">.</span><span class="na">NotebookApp</span><span class="p">.</span><span class="na">allow_root</span> <span class="o">=</span> <span class="n">False</span> <span class="c1">// Remove the # and change it to True to fix the root running issue.</span>
+</code></pre></div>
+In order to use wsl properly without errors, it's best to use this command and copy the address to the browser manually!
+<div class="highlight"><pre><span></span><code><span class="n">jupyter</span><span class="o">-</span><span class="n">notebook</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">browser</span>
+</code></pre></div>
+But after configuration, meep still doesn't work with orz.... Here's a statistic: On Supercomputers, PC's, and VM's, the above method is successful and can run simple code. On a workstation wsl, it doesn't work... I give up...
+<strong>But ！！！！ After I recreated a virtual environment, all the commands worked again!!!! Everything is normal again ！！！！</strong> It's so confusing!!! But at least it worked!!!</p>
+<h2 id="quantum-chemistry">Quantum Chemistry</h2>
+<h2 id="dft">DFT</h2>
                 
                   
                 
