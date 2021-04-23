@@ -1,47 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://note.northarea.tech/</loc>
-     <lastmod>2020-11-07</lastmod>
+     <lastmod>2021-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://note.northarea.tech/about/about/</loc>
-     <lastmod>2020-11-07</lastmod>
+     <lastmod>2021-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://note.northarea.tech/about/profile/</loc>
-     <lastmod>2020-11-07</lastmod>
+     <lastmod>2021-04-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://note.northarea.tech/about/vtb/</loc>
+     <lastmod>2021-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://note.northarea.tech/study/math/</loc>
-     <lastmod>2020-11-07</lastmod>
+     <lastmod>2021-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://note.northarea.tech/study/physics/</loc>
-     <lastmod>2020-11-07</lastmod>
+     <lastmod>2021-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://note.northarea.tech/study/cs/</loc>
-     <lastmod>2020-11-07</lastmod>
+     <lastmod>2021-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://note.northarea.tech/study/writing/</loc>
-     <lastmod>2020-11-07</lastmod>
+     <lastmod>2021-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://note.northarea.tech/study/paint/</loc>
-     <lastmod>2020-11-07</lastmod>
+     <lastmod>2021-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://note.northarea.tech/read/papers/</loc>
-     <lastmod>2020-11-07</lastmod>
+     <lastmod>2021-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://note.northarea.tech/read/tutorials/</loc>
-     <lastmod>2020-11-07</lastmod>
+     <lastmod>2021-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://note.northarea.tech/work/</loc>
-     <lastmod>2020-11-07</lastmod>
+     <lastmod>2021-04-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
